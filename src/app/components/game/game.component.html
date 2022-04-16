@@ -83,12 +83,12 @@
       <h3>Score: {{this.gameLogic.getTotalScore()}} </h3>
 
       <form *ngIf="!multiplayer" [formGroup]="spHighScoreForm" (ngSubmit)="submitHighScore()">
-        <input formControlName="playerOneName" type="text" class="player-input mt-20" placeholder="Player 1 Name" required>
+        <input formControlName="playerOneName" type="text" class="player-input mt-20" placeholder="Player Name" required>
         <button class="btn-main btn-md mt-20" type="submit" [disabled]="!spHighScoreForm.valid">Submit</button>
       </form>
 
       <form *ngIf="multiplayer" [formGroup]="mpHighScoreForm" (ngSubmit)="submitHighScore()">
-        <input formControlName="playerOneName" type="text" class="player-input mt-20" placeholder="Player 1 Name" required>
+        <input formControlName="playerOneName" type="text" class="player-input mt-20" placeholder="Player Name" required>
         <input formControlName="playerTwoName" type="text" class="player-input mt-20 mb-20" placeholder="Player 2 Name" required>
         <button class="btn-main btn-md mt-20" type="submit" [disabled]="!mpHighScoreForm.valid">Submit</button>
       </form>
