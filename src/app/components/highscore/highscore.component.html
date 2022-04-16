@@ -1,0 +1,54 @@
+<div class="flex-container-center">
+
+  <h2 class="main-title">Highscores</h2>
+  <p class="mt-20">Singleplayer</p>
+  <div class="score-table mb-20">
+    <table>
+      <thead>
+      <tr>
+        <th>Rank</th>
+        <th>P1 Name</th>
+        <th>Score</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let entry of spHighScores | slice:0:10; let i = index">
+        <td>{{i + 1}}</td>
+        <td>{{entry.playerOneName}}</td>
+        <td>{{entry.score}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="mt-20">2-Player Coop</p>
+  <div class="score-table mb-20">
+    <table>
+      <thead>
+      <tr>
+        <th>Rank</th>
+        <th>P1 Name</th>
+        <th>P2 Name</th>
+        <th>Score</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let entry of mpHighScores | slice:0:10; let i = index">
+        <td>{{i + 1}}</td>
+        <td>{{entry.playerOneName}}</td>
+        <td>{{entry.playerTwoName}}</td>
+        <td>{{entry.score}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <button class="btn-main btn-lg" routerLink="/">Main Menu</button>
+
+</div>
+
+<div class="modal" [class.display-block]="!spHighScores || !mpHighScores">
+  <div class="center">
+      <i class="fa fa-spinner fa-pulse" [ngStyle]="{fontSize: '60pt', color: '#FFFFFF'}"> </i>
+  </div>
+</div>

@@ -1,0 +1,97 @@
+canvas {
+  background-color: rgba(0,0,0,0.65);
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0 10px 0 10px;
+  font-family: "American Captain";
+  font-size: 20pt;
+  color: #ffffff;
+}
+
+label {
+  font-family: "American Captain";
+  font-size: 16pt;
+  color: #FFFFFF;
+}
+
+input.player-input {
+  background: none;
+  padding: 0;
+  margin: 0;
+  width: 300px;
+  border: none;
+  border-bottom: solid 1pt rgba(255, 0, 0, 0.5);
+  color: #ffffff;
+  font-family: "American Captain";
+  font-size: 20pt;
+}
+
+input.player-input:focus {
+  outline: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-hidden {
+  display: none !important;
+}
+
+.game-container {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hud {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0,0,0,0.65);
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.hud-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 100%;
+  margin: 2px;
+}
+
+.score {
+  width: 120px;
+}
+
+.preview-tile {
+  background-color: rgba(255, 0, 0, 0.5);
+  color: #ffffff;
+  border: solid rgba(255, 0, 0, 0);
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+}
+
+.preview-tile.active {
+  background-color: rgba(41, 41, 41, 0.8);
+  color: #ffffff;
+  border: solid rgba(41, 41, 41, 0);
+}
+
+.preview-tile:hover {
+  cursor: pointer;
+}
