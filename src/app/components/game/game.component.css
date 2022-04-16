@@ -7,13 +7,13 @@ canvas {
 p {
   padding: 0;
   margin: 0 10px 0 10px;
-  font-family: "American Captain";
+  font-family: "Atari Classic";
   font-size: 20pt;
   color: #ffffff;
 }
 
 label {
-  font-family: "American Captain";
+  font-family: "Atari Classic";
   font-size: 16pt;
   color: #FFFFFF;
 }
@@ -26,7 +26,7 @@ input.player-input {
   border: none;
   border-bottom: solid 1pt rgba(255, 0, 0, 0.5);
   color: #ffffff;
-  font-family: "American Captain";
+  font-family: "Atari Classic";
   font-size: 20pt;
 }
 
