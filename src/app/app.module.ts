@@ -13,6 +13,8 @@ import {AngularFontAwesomeModule} from "angular-font-awesome";
 import {HttpClientModule} from "@angular/common/http";
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { TokenomicsComponent } from './components/tokenomics/tokenomics.component';
+
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { FooterComponent } from './components/footer/footer.component';
     HighscoreComponent,
     NavbarComponent,
     FooterComponent,
+    TokenomicsComponent
+    
   ],
   imports: [
     BrowserModule,
