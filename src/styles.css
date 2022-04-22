@@ -5,7 +5,16 @@
   color: red;
 } */
 
+.nav-link{
+  color: white !important;
+  transition: 0.3s ease-in;
 
+}
+
+.nav-link:hover{
+  color: rgb(230, 190, 190) !important;
+  transition: 0.3s ease-out;
+}
 
    
 
@@ -44,12 +53,16 @@ h3 {
   border: solid rgba(255, 0, 0, 0);
   padding-bottom: 0;
   padding-top: 0;
+  transition: 0.3s ease-out;
 }
 
 .btn-main:hover {
   background-color: rgba(41, 41, 41, 0.8);
   color: #ffffff;
   border: solid rgba(41, 41, 41, 0);
+  transition: 0.3s ease-in;
+  
+
 }
 
 .btn-main:disabled {

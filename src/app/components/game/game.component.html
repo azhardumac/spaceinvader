@@ -49,7 +49,7 @@
       <p class="mb-10" *ngIf="!shipsSelected">Player 1: Select a Battleship</p>
       <div *ngIf="gameLoaded && !shipsSelected" class="row mb-20">
         <div class="preview-tile" *ngFor="let image of availableBattleships" (click)="selectPlayerOneShip(image)" [class.active]="image === playerOneSelectedBattleship">
-          <div class="flex-container-center">
+          <div class="flex-container-center ">
             <img src="{{image.src}}"/>
           </div>
         </div>
