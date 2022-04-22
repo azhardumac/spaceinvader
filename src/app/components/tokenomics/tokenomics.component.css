@@ -3,6 +3,9 @@ img{
     width:100%;
   }
   
+  body{
+    
+  }
   .head{
       color:crimson;
   }
@@ -18,6 +21,7 @@ img{
     background-image: linear-gradient(#dd5e89, #f7bb97);
    /* background-image:  linear-gradient(.25turn, red, 10%, blue); */
    /* background-image: linear-gradient(45deg, red 0 40%, blue 60% 100%); */
+   
 }
   .item-card-title{  
     font-size:15px;
@@ -65,4 +69,7 @@ img{
   }
   .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
     transform: scale3d(1, 1, 1);
+  }
+  p{
+    color: grey;
   }
